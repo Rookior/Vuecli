@@ -9,6 +9,7 @@
     <router-link to="/about">关于</router-link>
     <router-view></router-view>
     <hr />
+    <h1>Vuex实例</h1>
     <div>
       <PageVuex />
     </div>
