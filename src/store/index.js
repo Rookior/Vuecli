@@ -1,8 +1,32 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import app from './modules/app';
+import user from './modules/user';
 
 Vue.use(Vuex)
 
+const moduleA = {
+  state: { 
+    aa: 111,
+    count: 3 
+  },
+  mutations: {
+    incrementModuleA (state) {
+      // 这里的 `state` 对象是模块的局部状态
+      state.count++
+    }
+  },
+  actions: {
+    incrementIfOddOnRootSum ({ state, commit, rootState }) {
+      if ((state.count + rootState.count) % 2 === 1) {
+        commit('incrementModuleA')
+      }
+    }
+  },
+  getters: { 
+    
+  }
+}
 
 export default new Vuex.Store({
   state: {
@@ -46,5 +70,10 @@ export default new Vuex.Store({
         })
       }, 1000)
     }
+  },
+  modules: {
+    a: moduleA,
+    app,
+    user
   }
 })

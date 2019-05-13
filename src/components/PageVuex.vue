@@ -19,6 +19,13 @@
       列表查找-为getter传递参数
       {{getTodoByID}}
     </p>
+    <p>
+      <hr />
+      Module使用：当前state:{{this.$store.state.a}}&nbsp;&nbsp;全局state的count:{{this.$store.state.count}}
+      <button @click="IncrementModuleA">Action修改当前Module的state</button>
+      <br />
+
+    </p>
   </div>
 </template>
 
@@ -46,6 +53,9 @@ export default {
       this.$store.commit('incrementNum',{
          amount: 10
       })
+    },
+    IncrementModuleA (){
+      this.$store.dispatch('incrementIfOddOnRootSum')
     },
     desNum () {
       this.$store.commit({

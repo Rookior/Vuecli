@@ -13,6 +13,9 @@
     <div>
       <PageVuex />
     </div>
+    <div>
+      <ModuleApp />
+    </div>
   </div>
 </template>
 
@@ -20,12 +23,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TestPage from './components/TestPage.vue'
 import PageVuex from './components/PageVuex.vue'
+import ModuleApp from './components/ModuleApp.vue'
+
 export default {
   name: 'app',
   components: {
     HelloWorld,
     TestPage,
-    PageVuex
+    PageVuex,
+    ModuleApp
   }
 }
 </script>
