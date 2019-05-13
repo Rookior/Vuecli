@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c55c8"],{"3f87":function(n,e,t){"use strict";t.r(e);var c=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n  嵌套子路由Posts\n")])},s=[],o={components:{}},u=o,l=t("2877"),r=Object(l["a"])(u,c,s,!1,null,null,null);e["default"]=r.exports}}]);
-//# sourceMappingURL=chunk-2d0c55c8.27739d25.js.map
