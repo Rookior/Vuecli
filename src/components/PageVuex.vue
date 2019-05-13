@@ -24,13 +24,11 @@
       Module使用：当前state:{{this.$store.state.a}}&nbsp;&nbsp;全局state的count:{{this.$store.state.count}}
       <button @click="IncrementModuleA">Action修改当前Module的state</button>
       <br />
-
     </p>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
 export default {
   computed: {
     count () {
