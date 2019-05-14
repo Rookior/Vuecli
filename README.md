@@ -1,6 +1,34 @@
-# hello-world
+# Vuecli
 
-## Project setup
+### 简介
+
+CLI 服务是构建于 webpack 和 webpack-dev-server 
+
+### 安装环境
+
+卸载旧版本
+
+```
+npm uninstall vue-cli -g 
+# OR
+yarn global remove vue-cli 
+```
+全局安装新版本
+
+```
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+```
+
+### 创建一个项目
+
+```
+vue create hello-world
+# OR
+vue ui
+```
+### Project setup
 ```
 npm install
 ```
@@ -14,16 +42,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
